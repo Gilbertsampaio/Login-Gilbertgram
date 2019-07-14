@@ -27,17 +27,27 @@ session_start();
 
 		<!-- BEGIN GLOBAL MANDATORY STYLES -->
 	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700&amp;subset=all' rel='stylesheet' type='text/css'>
-		
 	<link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-	<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-	<link href="assets/demos/default/css/components.css" id="style_components" rel="stylesheet" type="text/css"/>
-    <link href="css/login-telegram.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+  <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+  <!-- END GLOBAL MANDATORY STYLES -->
 
-    <link href="assets/demos/default/css/plugins.css" rel="stylesheet" type="text/css"/>
+  <link href="assets/plugins/cubeportfolio/css/cubeportfolio.min.css" rel="stylesheet" type="text/css"/>
+  <link href="assets/plugins/owl-carousel/assets/owl.carousel.css" rel="stylesheet" type="text/css"/>
+  <link href="assets/plugins/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css"/>
+        <!-- END: BASE PLUGINS -->
+  
+  
+    <!-- BEGIN THEME STYLES -->
+  <link href="assets/demos/default/css/plugins.css" rel="stylesheet" type="text/css"/>
+  <link href="assets/demos/default/css/components.css" id="style_components" rel="stylesheet" type="text/css"/>
+  <link href="assets/demos/default/css/themes/default.css" rel="stylesheet" id="style_theme" type="text/css"/>
+  <link href="assets/demos/default/css/custom.css" rel="stylesheet" type="text/css"/>
+
 
 
 	<link rel="shortcut icon" href="favicon.ico"/>
-	<script src="assets/plugins/jquery.min.js" type="text/javascript" ></script>
+
 <style>
 .mensagem {
 	opacity: 1; 
@@ -107,7 +117,7 @@ a {
     margin-top: 1px;
 }
 .c-content-box.c-size-md {
-    padding: 120px 0 70px 0;
+    padding: 90px 0 20px 0;
 }
 p {
 	font-size: 14px;
@@ -430,12 +440,15 @@ p {
 
 
 <body class="c-layout-header-fixed c-layout-header-6-topbar" style="background-color: #e7ebf0"> 
-	<div class="login_head_bg">
+	
+
+  <div class="login_head_bg">
  		<div class="c-content-box c-size-md ">
 			<div class="container">
 				<div class="c-shop-login-register-1">
 					<form id="logintelegram" action="" method="post">
 					<div class="row">
+
 						<div class="col-md-4 col-md-offset-4">
 							<div class="panel panel-default c-panel">
 								<div id="etapa1" style="position: relative;left: 0; opacity: 1">
@@ -471,6 +484,40 @@ p {
 								<p style="margin: 0 0 10px;color: #84a2bc;font-size: 14px;line-height: 16px;text-align: center;">Bem vindo ao cliente web oficial do Gilbertgram.</p>
 								<a style="color: #84a2bc;font-weight: 700;font-size: 14px;line-height: 16px;text-align: center; cursor:pointer" data-toggle="modal" data-target="#suporte-form">Dificuldades de acesso?</a>
 							</div>
+              <div class="container" style="margin-top: 20px">
+                <div class="c-content-person-1-slider" data-slider="owl">
+                  <div class="owl-carousel owl-theme c-theme c-owl-nav-center" data-rtl="false" data-items="4" data-slide-speed="8000"> 
+<?php
+$sql = mysqli_query($connect,"SELECT * FROM users ORDER BY id ASC");
+if(mysqli_num_rows($sql) > 0){
+while($ln = mysqli_fetch_object($sql)):
+?>
+                    <div class="item">
+                      <div class="c-content-person-1">
+                        <div class="c-caption c-content-overlay">
+                          <div class="c-overlay-wrapper">
+                            <div class="c-overlay-content">
+                              <a href="img/<?php echo $ln->foto; ?>" data-lightbox="fancybox" data-fancybox-group="gallery-1">
+                                <i class="fa fa-plus"></i>
+                              </a>
+                            </div>
+                          </div>
+                          <img class="c-overlay-object img-responsive" src="img/<?php echo $ln->foto; ?>" alt="<?php echo $ln->nome; ?> <?php echo $ln->sobrenome; ?>">
+                        </div>
+                        <div class="c-body">
+                          <div class="c-head">
+                            <div class="c-name c-font-uppercase c-font-bold"><?php echo $ln->nickname; ?></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>   
+<?php endwhile ?>  
+<?php }else if(mysqli_num_rows($sql) == false){?>
+                      Em breve você verá aqui a galeria de usuários cadastrados.
+<?php } ?>
+                  </div>
+                </div>
+              </div>
 						</div>
 					</div>
 				</form>
@@ -478,6 +525,8 @@ p {
 		</div>
 	</div>
 </div>
+
+
 
 <div class="modal fade c-content-suporte-form" id="suporte-form" role="dialog">
     <div class="modal-dialog modal-md">
@@ -497,7 +546,16 @@ p {
     </div>
 </div>
 
-<script src="assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript" ></script>
+
+  <script src="assets/plugins/jquery.min.js" type="text/javascript" ></script>
+
+  <script src="assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript" ></script>
+  <script src="assets/plugins/cubeportfolio/js/jquery.cubeportfolio.min.js" type="text/javascript"></script>
+  <script src="assets/plugins/owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
+  <script src="assets/plugins/counterup/jquery.counterup.min.js" type="text/javascript"></script>
+  <script src="assets/plugins/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+  <script src="assets/base/js/components.js" type="text/javascript"></script>
+  
 
 </body>
 </html>
