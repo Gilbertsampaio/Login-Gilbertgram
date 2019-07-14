@@ -28,7 +28,9 @@ code {
 
 label {
   font-weight: 600;
-  font-size: 18px; color:#fc817a}
+  font-size: 18px; color:#fc817a;
+  width: 100%;
+}
  
 .badge {
   font-weight: 600;
