@@ -28,7 +28,7 @@ session_start();
 		<!-- BEGIN GLOBAL MANDATORY STYLES -->
 	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700&amp;subset=all' rel='stylesheet' type='text/css'>
 		
-	<link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+	<link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
 	<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 	<link href="assets/demos/default/css/components.css" id="style_components" rel="stylesheet" type="text/css"/>
     <link href="css/login-telegram.css" rel="stylesheet" type="text/css"/>
@@ -475,7 +475,7 @@ p {
 								</div>
 							</div>
 							<div style="text-align: center;">
-								<p style="margin: 0 0 10px;color: #84a2bc;font-size: 14px;line-height: 16px;text-align: center;">Bem vindo ao cliente web oficial do Gilbertgram. <a href="cadastro-telegram.php">Cadastre-se</a></p>
+								<p style="margin: 0 0 10px;color: #84a2bc;font-size: 14px;line-height: 16px;text-align: center;">Bem vindo ao cliente web oficial do Gilbertgram. <a href="cadastro-telegram.php"><i class="fa fa-plus"></i> Cadastre-se</a></p>
 								<a style="color: #84a2bc;font-weight: 700;font-size: 14px;line-height: 16px;text-align: center; cursor:pointer" data-toggle="modal" data-target="#suporte-form">Dificuldades de acesso?</a>
 							</div>
 						</div>

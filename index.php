@@ -455,12 +455,12 @@ p {
 										<div class="row" style="padding: 20px 0px 20px 0px">
 										  	<div class="col-md-6">
 										      <label class="form-input">
-										      	<button type="button" onclick="window.location.href='login-telegram.php'" class="btn btn-success btn-md" style="width:100%">ENTRAR NO SISTEMA</button> 
+										      	<button type="button" onclick="window.location.href='login-telegram.php'" class="btn btn-success btn-md" style="width:100%"><i class="fa fa-sign-in"></i> LOGIN</button> 
 										      </label>
 											</div>
 											<div class="col-md-6">
 										      <label class="form-input">
-										      	<button type="button" onclick="window.location.href='cadastro-telegram.php'" class="btn btn-success btn-md" style="width:100%">NOVO CADASTRO</button>
+										      	<button type="button" onclick="window.location.href='cadastro-telegram.php'" class="btn btn-success btn-md" style="width:100%"><i class="fa fa-plus"></i> CADASTRE-SE</button>
 										      </label>
 										  	</div>
 									 	</div>

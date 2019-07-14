@@ -524,7 +524,7 @@ p {
 								</div>
 							</div>
 							<div style="text-align: center;">
-								<p style="margin: 0 0 10px;color: #84a2bc;font-size: 14px;line-height: 16px;text-align: center;">Bem vindo ao cliente web oficial do Gilbertgram. <a href="login-telegram.php">Login</a></p>
+								<p style="margin: 0 0 10px;color: #84a2bc;font-size: 14px;line-height: 16px;text-align: center;">Bem vindo ao cliente web oficial do Gilbertgram. <a href="login-telegram.php"><i class="fa fa-sign-in"></i> Login</a></p>
 								<a style="color: #84a2bc;font-weight: 700;font-size: 14px;line-height: 16px;text-align: center; cursor:pointer" data-toggle="modal" data-target="#suporte-form">Dificuldades de acesso?</a>
 							</div>
 						</div>
