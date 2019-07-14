@@ -117,7 +117,7 @@ a {
     margin-top: 1px;
 }
 .c-content-box.c-size-md {
-    padding: 85px 0 15px 0;
+    padding: 100px 0 15px 0;
 }
 p {
 	font-size: 14px;
