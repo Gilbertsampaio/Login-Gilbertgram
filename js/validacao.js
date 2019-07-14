@@ -9,11 +9,6 @@ $(document).ready(function(){
 
 		$("#etapa1").animate({"opacity":"1", "z-index":"10"});
 		$("#etapa2").animate({"opacity":"0", "z-index":"9"});
-		$('input#ddd').val("");
-		$('input#telefone').val("");
-		$('input#ddd').focus();
-		/*$('input#ddd').focus().css('z-index','10');
-		$('input#telefone').css('z-index','10');*/
 		$('.login_head_logo_link').css('display','block');
 		$('.anterior').css('display','none');
 		$('#submeter').html('Próxima');
