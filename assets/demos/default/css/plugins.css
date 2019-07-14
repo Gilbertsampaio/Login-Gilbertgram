@@ -31,7 +31,7 @@ label {
   font-size: 18px; color:#fc817a}
  
 .badge {
-  font-weight: 400;
+  font-weight: 600;
   padding: 4px 7px; }
 
 .pager li > a, .pager li > span {
@@ -4881,7 +4881,7 @@ label.control-label {
 .modal-header {
   padding: 20px 20px 15px 20px;
   border-bottom: 1px solid #eeeeee; 
-  background:#5682a3;
+  background:#3c6fff;
   }
   .modal-header > .close {
     margin-top: -4px; }
@@ -5350,7 +5350,7 @@ label.control-label {
   position: absolute; }
 
 .owl-carousel .owl-controls {
-  margin-top: 60px; }
+  margin-top: 20px; }
   .owl-carousel .owl-controls .owl-dot {
     width: 12px;
     height: 12px;
@@ -5392,7 +5392,7 @@ label.control-label {
   margin-left: -30px;
   width: calc(100% + 60px); }
   .owl-theme:not(.owl-single):not(.owl-bordered) .owl-wrapper .owl-item, .owl-theme:not(.owl-single):not(.owl-bordered) .owl-stage-outer .owl-item {
-    padding: 0 30px; }
+    padding: 0 5px; }
 
 .owl-theme.owl-theme-white .owl-pagination .owl-page span {
   background: #ffffff;
