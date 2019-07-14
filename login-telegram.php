@@ -70,7 +70,7 @@ height: 75px;
     vertical-align: middle;
     margin-left: 10px;
     margin-top: -1px;
-    background-image: url(https://web.telegram.org/img/icons/General.png);
+    background-image: url(General.png);
     background-repeat: no-repeat;
     background-position: -18px -50px;
 }
@@ -91,10 +91,26 @@ a {
     height: 30px;
     display: inline-block;
     vertical-align: top;
-    margin-right: 10px;
-    background-image: url(https://web.telegram.org/img/icons/General.png);
+    margin-right: 0px;
+    background-image: url(General.png);
     background-repeat: no-repeat;
     background-position: -5px -10px;
+}
+.login_head_logo_link {
+    opacity: 0.6;
+  	filter: alpha(opacity=60); /* For IE8 and earlier */
+    -o-transition: opacity 0.5s;
+	-moz-transition: opacity 0.5s;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+.login_head_logo_link:hover, .login_head_logo_link:hover > .icon-tg-logo {
+  	opacity: 1.0;
+  	filter: alpha(opacity=100); /* For IE8 and earlier */
+    -o-transition: opacity 0.5s;
+	-moz-transition: opacity 0.5s;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;  
 }
 .icon-tg-title {
     width: 100px;
@@ -106,6 +122,7 @@ a {
     background-position: 0 0;
     margin-top: 1px;
 }
+
 .c-content-box.c-size-md {
     padding: 120px 0 70px 0;
 }
