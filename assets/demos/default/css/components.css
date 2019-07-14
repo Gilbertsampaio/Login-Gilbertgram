@@ -7825,7 +7825,9 @@ padding-top:10px
 
 .c-content-overlay {
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  border-radius: 10%;
+   }
   .c-content-overlay .c-overlay-object {
     position: relative;
     z-index: 1; }
@@ -11239,11 +11241,13 @@ padding-top:10px
       font-size: 40px; } }
 
 .c-content-person-1 .c-body {
-  padding: 20px 0; }
+  padding: 10px 0;
+  text-align: center;
+   }
   .c-content-person-1 .c-body .c-head .c-name {
     display: inline-block;
-    float: left;
-    font-size: 14px;
+    float: center;
+    font-size: 11px;
     font-weight: 400;
     color: #3f444a; }
   .c-content-person-1 .c-body .c-head .c-socials {
