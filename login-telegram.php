@@ -463,7 +463,7 @@ p {
 									</div>
 									<div class="panel-body c-panel-body" style="padding: 20px 55px 60px 65px;">
 										<label class="form-input input-effect">
-											<input type="<?php if($dispositivo == "web"){?>text<?php } else {?>tel<?php } ?>" name="codigo" id="codigo" style="text-align: center; padding: 25px 0 8px 0;" maxlength="8" onkeypress="return somenteNumeros(event)"/>
+											<input type="tel" name="codigo" id="codigo" style="text-align: center; padding: 25px 0 8px 0;" maxlength="8" onkeypress="return somenteNumeros(event)"/>
 											<span id="alertacodigo" class="label label-2">Insira seu código de acesso</span>
 											<div id="codigolinha" class="underline"></div>
 										</label>

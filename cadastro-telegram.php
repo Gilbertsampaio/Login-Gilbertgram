@@ -489,14 +489,14 @@ p {
             										<div class="col-md-4">
 														<label class="form-input input-effect">
 															
-											        		<input type="<?php if($dispositivo == "web"){?>text<?php } else {?>tel<?php } ?>" name="ddd" id="ddd" maxlength="2" onkeypress="return somenteNumeros(event)" onkeyup="proximoCampo(this, 'telefone')"/>
+											        		<input type="tel" name="ddd" id="ddd" maxlength="2" onkeypress="return somenteNumeros(event)" onkeyup="proximoCampo(this, 'telefone')"/>
 											        		<span id="alertaddd" class="label">DDD</span>
 											        		<div id="dddlinha" class="underline"></div>
 											      		</label>
 									      			</div>
             										<div class="col-md-8">
 												      	<label class="form-input input-effect">
-												        	<input type="<?php if($dispositivo == "web"){?>text<?php } else {?>tel<?php } ?>" name="telefone" id="telefone" maxlength="9" onkeypress="return somenteNumeros(event)" onkeyup="proximoCampo(this, 'frase')"/>
+												        	<input type="tel" name="telefone" id="telefone" maxlength="9" onkeypress="return somenteNumeros(event)" onkeyup="proximoCampo(this, 'frase')"/>
 												        	<span id="alertatelefone" class="label">Número de telefone</span>
 												        	<div id="telefonelinha" class="underline"></div>
 												      	</label>
