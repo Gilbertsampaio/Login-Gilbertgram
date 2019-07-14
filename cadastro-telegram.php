@@ -543,7 +543,7 @@ p {
                 <h4 class="modal-title" id="myModalLabel">SUPORTE GILBERTGRAM</h4>
             </div>
             <div class="modal-body">
-                <p style="text-align:justify">Ao informar o seu telefone com DDD, encaminharemos para o e-mail associado ao número informado um código de confirmação de acesso.<br> Caso não lembre o número ou não tenha mais acesso ao seu e-mail cadastrado, entre em contato com o desenvolvedor pelo telefone: <span style="color:#3c6fff; font-weight:bold">(96)99151-1351</span>.
+                <p style="text-align:justify">Ao informar o seu telefone com DDD, encaminharemos para o e-mail associado ao número informado um código de confirmação de acesso.<br> Caso não lembre o número ou não tenha mais acesso ao seu e-mail cadastrado, entre em contato com o desenvolvedor pelo telefone: <span style="color:#5682a3; font-weight:bold">(96)99151-1351</span>.
                 </p>
             </div>
             <div class="modal-footer">								
