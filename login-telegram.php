@@ -80,7 +80,7 @@ height: 75px;
 .login_head_logo_link {
     display: inline-block;
     line-height: 30px;
-    padding: 23px 15px 22px;
+    padding: 23px 15px 22px 0px;
 }
 a {
     color: #3a6d99;
