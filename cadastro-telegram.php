@@ -80,6 +80,7 @@ session_start();
     display: inline-block;
     line-height: 30px;
     padding: 23px 15px 22px 0px;
+
 }
 a {
     color: #3a6d99;
@@ -102,6 +103,7 @@ a {
 	-moz-transition: opacity 0.5s;
 	-webkit-transition: opacity 0.5s;
 	transition: opacity 0.5s;
+	float: left
 }
 .login_head_logo_link:hover, .login_head_logo_link:hover > .icon-tg-logo {
   	opacity: 1.0;
