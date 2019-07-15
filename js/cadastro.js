@@ -16,6 +16,13 @@ $(document).ready(function(){
 		var frase=$('#frase').val();
 		var senha=$('#senha').val();
 		var confisenha=$('#confisenha').val();
+
+		if(nome != '' && sobrenome != '' && nickname != '' && email != '' && ddd != '' && telefone != '' && frase != '' && senha != '' && confisenha != ''){
+								  
+			$('#cadastrar').html('Validando <i class="proxima"></i>');
+			$('#carregando').css({ opacity: 0 });
+
+		}
 		
 		$.ajax({			
 			url:"cadastrar.php",			
@@ -24,6 +31,9 @@ $(document).ready(function(){
 			success: function (result){			
 								
 				if(result==1){	
+
+					$('#cadastrar').html('Cadastrar');				 
+					$('#carregando').css({ opacity: 1 });
 
 					$(".mensagemcadastro").animate({opacity:0});
 					$(".mensagemcadastrook").animate({opacity:1});
@@ -258,6 +268,21 @@ $(document).ready(function(){
 					$('input#senha').val("");
 					$('input#confisenha').val("");
 					$('input#senha').focus();
+					return false;
+
+				} else {
+
+					$('span#alertasenha').css('color', '#868e96').html('Senha').fadeIn("fast");
+					$('#senhalinha').addClass('underline').prop('style', '');
+				}
+
+				if(result==16){
+
+					$('span#alertasenha').css({'color':'#e2726f'}).html('Digite uma senha forte').fadeIn("fast");
+					$('#senhalinha').css({'background-color':'#e2726f', 'height':'2px'});
+					$('input#senha').val("");
+					$('input#senha').focus();
+					$('#popoverOption2').popover({ trigger: "hover" }).popover('show');
 					return false;
 
 				} else {
