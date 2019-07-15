@@ -74,6 +74,10 @@ $res = mysqli_fetch_array($resultados);
 
 		echo 13;
 
+	} else if (!preg_match("/^.*(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*\W+)(?=^.{6,50}$).*$/",$senha)) { 
+
+		echo 16;
+
 	} else if($confisenha == ''){
 
 		echo 14;

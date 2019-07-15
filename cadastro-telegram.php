@@ -163,7 +163,7 @@ p {
   border: 3px solid #ffffff;
   border-top-color: rgba(255, 255, 255, 0.1);
   border-radius: 100%;
-  left: 155%;
+  left: 143%;
   top: 5%;
   opacity: 1;
   margin-left: -20px;
@@ -403,6 +403,11 @@ p {
 
 </style>
 <script type="text/javascript">
+$(window).load(function(){
+$('#popoverOption2').popover({ trigger: "click" }); /*.popover('show')*/
+});
+</script>
+<script type="text/javascript">
 	function somenteNumeros(e) {
         var charCode = e.charCode ? e.charCode : e.keyCode;
         // charCode 8 = backspace   
@@ -523,7 +528,10 @@ p {
 									        		<span id="alertafrase" class="label">Frase do perfil</span>
 									        		<div id="fraselinha" class="underline"></div>
 									      		</label>
-									      		<label class="form-input input-effect">
+
+									      		<a style="position: relative; left: 96%; top: 5px; margin-top: -30px; margin-bottom: -30px; z-index: 100" id="popoverOption2" data-html="true" data-content='<ul class="c-content-list-1 c-theme c-separator-dot"><li>1 Letra maiúscula</li><li>1 Letra minúscula</li><li>1 Caractere especial</li><li>1 Número</li><li>Entre 6 à 50 caracteres</li></ul>' rel="popover" data-placement="left" data-original-title="Sua senha deve conter pelo menos"><i class="fa fa-question-circle" ></i></a>
+
+									      		<label style="margin-top: -24px" class="form-input input-effect">
 									        		<input type="password" name="senha" id="senha"/>
 									        		<span id="alertasenha" class="label">Senha</span>
 									        		<div id="senhalinha" class="underline"></div>
@@ -534,6 +542,7 @@ p {
 									        		<div id="confisenhalinha" class="underline"></div>
 									      		</label>
 									      		<a id="exibe" onClick="mS('text')" style="cursor: pointer; position: relative; left: 5px; top: 2px; margin-top: -10px; font-size: 18px" class="fa fa-eye fa-1x"> <span style="font-family: 'Roboto Condensed', sans-serif; font-size: 14px">Clique aqui ára exibir as senhas</span></a>
+									      		
 										  	</div>
 									  	</div>
 									</div> 
