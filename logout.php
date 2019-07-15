@@ -13,6 +13,6 @@ session_start();
 
 $_SESSION['alerta_login'] = '<script> var segundos = 5; setTimeout(function(){ $("#sessaoencerrada").fadeOut();}, segundos*1000)</script><span id="sessaoencerrada" style="color:red; font-size:14px">Sua sessão foi encerrada com sucesso!</span>';
 
-header("Location: login-telegram.php");
+header("Location: index.php");
 exit;  
 ?>
