@@ -186,6 +186,14 @@ p {
 	opacity: 0; position:absolute; left:18.3%; width: 210px
 }
 
+.c-content-overlay .c-overlay-wrapper .c-overlay-content i {
+    width: 70px;
+    height: 70px;
+    padding: 12px 6px 8px 6px;
+    font-size: 36px;
+    margin-left: 100px
+}
+
 }
 
 /* Extra small devices (phones, 360px and down) CELULAR EM PÉ */
@@ -202,6 +210,17 @@ p {
 	opacity: 0; position:absolute; left:17.5%; width: 225px
 }
 
+.usuarios {
+  width: 50%;
+}
+.c-content-overlay .c-overlay-wrapper .c-overlay-content i {
+    width: 50px;
+    height: 50px;
+    padding: 12px 6px 8px 6px;
+    font-size: 22px;
+    margin-left: 35px
+}
+
 }
 
 /* Extra small devices (phones, 414px and down) CELULAR EM PÉ */
@@ -216,6 +235,18 @@ p {
 
 .mensagem2, .mensagem3 {
 	opacity: 0; position:absolute; left:15.5%; width: 264px
+}
+
+.usuarios {
+  width: 60%;
+}
+
+.c-content-overlay .c-overlay-wrapper .c-overlay-content i {
+    width: 50px;
+    height: 50px;
+    padding: 12px 6px 8px 6px;
+    font-size: 22px;
+    margin-left: 70px
 }
 
 }
@@ -244,6 +275,17 @@ p {
 
 .mensagem2, .mensagem3 {
 	opacity: 0; position:absolute; left:9.4%; width: 517px
+}
+
+.usuarios {
+  width: 50%;
+}
+.c-content-overlay .c-overlay-wrapper .c-overlay-content i {
+    width: 80px;
+    height: 80px;
+    padding: 15px 6px 8px 6px;
+    font-size: 44px;
+    margin-left: 90px
 }
 
 }
@@ -278,6 +320,14 @@ p {
 	opacity: 0; position:absolute; left:8.5%; width: 590px
 }
 
+.c-content-overlay .c-overlay-wrapper .c-overlay-content i {
+    width: 70px;
+    height: 70px;
+    padding: 12px 6px 8px 6px;
+    font-size: 36px;
+    margin-left: 120px
+}
+
 }
 
 
@@ -293,6 +343,18 @@ p {
 
 .mensagem2, .mensagem3 {
 	opacity: 0; position:absolute; left:8.4%; width: 600px
+}
+
+.usuarios {
+  width: 75%;
+}
+
+.c-content-overlay .c-overlay-wrapper .c-overlay-content i {
+    width: 60px;
+    height: 60px;
+    padding: 15px 6px 8px 6px;
+    font-size: 28px;
+    margin-left: 50px
 }
 
 }
@@ -326,6 +388,10 @@ p {
 
 .mensagem2, .mensagem3 {
 	opacity: 0; position:absolute; left:8.4%; width: 600px
+}
+
+.usuarios {
+  width: 50%;
 }
 
 }
@@ -366,6 +432,18 @@ p {
 
 .col-md-offset-4 {
     margin-left: 25%;
+}
+
+.usuarios {
+  width: 100%;
+}
+
+.c-content-overlay .c-overlay-wrapper .c-overlay-content i {
+    width: 50px;
+    height: 50px;
+    padding: 10px 6px 8px 6px;
+    font-size: 28px;
+    margin-left: 35px
 }
 
 }
@@ -409,6 +487,10 @@ p {
 
 .col-md-offset-4 {
     margin-left: 30%;
+}
+
+.usuarios {
+  width: 100%;
 }
 
 }
@@ -484,11 +566,11 @@ p {
 								<p style="margin: 0 0 10px;color: #84a2bc;font-size: 14px;line-height: 16px;text-align: center;">Bem vindo ao cliente web oficial do Gilbertgram - <a style="color: #84a2bc;font-weight: 700;font-size: 14px;line-height: 16px;text-align: center; cursor:pointer" data-toggle="modal" data-target="#suporte-form">Dificuldades de acesso?</a></p>
 								<a style="color: #5dc09c;font-weight: 700;font-size: 14px;line-height: 16px;text-align: center; cursor:default;">VEJA QUEM JÁ ESTÁ CONOSCO!</a>
 							</div>
-              <div class="container" style="margin-top: 20px">
+              <div class="container usuarios" style="margin-top: 20px">
                 <div class="c-content-person-1-slider" data-slider="owl">
-                  <div class="owl-carousel owl-theme c-theme c-owl-nav-center" data-rtl="false" data-items="4" data-slide-speed="8000"> 
+                  <div class="owl-carousel owl-theme c-theme c-owl-nav-center" data-rtl="false" data-items="6" data-slide-speed="8000"> 
 <?php
-$sql = mysqli_query($connect,"SELECT * FROM users ORDER BY id ASC");
+$sql = mysqli_query($connect,"SELECT * FROM users ORDER BY id DESC limit 12");
 if(mysqli_num_rows($sql) > 0){
 while($ln = mysqli_fetch_object($sql)):
 ?>
