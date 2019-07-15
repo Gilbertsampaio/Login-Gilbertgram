@@ -529,7 +529,7 @@ $('#popoverOption2').popover({ trigger: "click" }); /*.popover('show')*/
 									        		<div id="fraselinha" class="underline"></div>
 									      		</label>
 
-									      		<a style="position: relative; left: 96%; top: 5px; margin-top: -30px; margin-bottom: -30px; z-index: 100" id="popoverOption2" data-html="true" data-content='<ul class="c-content-list-1 c-theme c-separator-dot"><li>1 Letra maiúscula</li><li>1 Letra minúscula</li><li>1 Caractere especial</li><li>1 Número</li><li>Entre 6 à 50 caracteres</li></ul>' rel="popover" data-placement="left" data-original-title="Sua senha deve conter pelo menos"><i class="fa fa-question-circle" ></i></a>
+									      		<a style="position: relative; left: 96%; top: 5px; margin-top: -30px; margin-bottom: -30px; z-index: 100; cursor: pointer;" id="popoverOption2" data-html="true" data-content='<ul class="c-content-list-1 c-theme c-separator-dot"><li>1 Letra maiúscula</li><li>1 Letra minúscula</li><li>1 Caractere especial</li><li>1 Número</li><li>Entre 6 à 50 caracteres</li></ul>' rel="popover" data-placement="left" data-original-title="Sua senha deve conter pelo menos"><i class="fa fa-question-circle" ></i></a>
 
 									      		<label style="margin-top: -24px" class="form-input input-effect">
 									        		<input type="password" name="senha" id="senha"/>
