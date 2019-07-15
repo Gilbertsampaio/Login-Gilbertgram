@@ -189,7 +189,7 @@ p {
 .c-content-overlay .c-overlay-wrapper .c-overlay-content i {
     width: 70px;
     height: 70px;
-    padding: 12px 6px 8px 6px;
+    padding: 15px 6px 8px 6px;
     font-size: 36px;
     margin-left: 100px
 }
@@ -246,7 +246,7 @@ p {
     height: 50px;
     padding: 12px 6px 8px 6px;
     font-size: 22px;
-    margin-left: 70px
+    margin-left: 65px
 }
 
 }
@@ -304,6 +304,14 @@ p {
 	opacity: 0; position:absolute; left:8.5%; width: 586px
 }
 
+.c-content-overlay .c-overlay-wrapper .c-overlay-content i {
+    width: 80px;
+    height: 80px;
+    padding: 15px 6px 8px 6px;
+    font-size: 44px;
+    margin-left: 110px
+}
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) IPAD, IPHONE X DEITADO*/
@@ -323,7 +331,7 @@ p {
 .c-content-overlay .c-overlay-wrapper .c-overlay-content i {
     width: 70px;
     height: 70px;
-    padding: 12px 6px 8px 6px;
+    padding: 15px 6px 8px 6px;
     font-size: 36px;
     margin-left: 120px
 }
@@ -354,7 +362,7 @@ p {
     height: 60px;
     padding: 15px 6px 8px 6px;
     font-size: 28px;
-    margin-left: 50px
+    margin-left: 90px
 }
 
 }
@@ -371,6 +379,14 @@ p {
 
 .mensagem2, .mensagem3 {
 	opacity: 0; position:absolute; left:8.4%; width: 600px
+}
+
+.c-content-overlay .c-overlay-wrapper .c-overlay-content i {
+    width: 80px;
+    height: 80px;
+    padding: 22px 6px 8px 6px;
+    font-size: 36px;
+    margin-left: 80px
 }
 
 }
@@ -392,6 +408,14 @@ p {
 
 .usuarios {
   width: 50%;
+}
+
+.c-content-overlay .c-overlay-wrapper .c-overlay-content i {
+    width: 60px;
+    height: 60px;
+    padding: 15px 6px 8px 6px;
+    font-size: 30px;
+    margin-left: 50px
 }
 
 }
@@ -491,6 +515,14 @@ p {
 
 .usuarios {
   width: 100%;
+}
+
+.c-content-overlay .c-overlay-wrapper .c-overlay-content i {
+    width: 35px;
+    height: 35px;
+    padding: 8px 6px 8px 6px;
+    font-size: 18px;
+    margin-left: 5px
 }
 
 }
