@@ -211,7 +211,7 @@ $(document).ready(function(){
 
 			if(codigo != '' && etapa2 == '2'){
 
-				$('#submeter').html('Aguarde <i class="proxima"></i>');
+				$('#submeter').html('Confirma <i class="proxima"></i>');
 				$('#carregando').css({ opacity: 0 });
 
 			}
